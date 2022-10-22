@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#front {
+z-index:100;
+position:absolute;
+}
+
+#hidden {
+z-index:1;
+position:absolute;
+top:50px;
+}
+
+#viewport {
+z-index:2;
+position:relative;
+top:50px;
+}
+
+#cube {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+position:relative;
+padding: 0px;
+margin: 0 auto;
+width: 960px;
+height: 540px;
+-webkit-transition: -webkit-transform 50ms linear;
+-webkit-transform-style: preserve-3d;
+}
+
+#cube > div {
+position: absolute;
+width: 960px;
+padding: 0px;
+background-color: rgba(50, 50, 50, 0);
+text-align:left;
+}   
+
+#cube > div:first-child  {
+-webkit-transform: rotateX(90deg) translateZ(480px);
+height: 960px;
+}
+
+#cube > div:nth-child(2) {
+-webkit-transform: translateZ(480px);
+background-color:#333;
+}
+
+#cube > div:nth-child(3) {
+-webkit-transform: rotateY(90deg) translateZ(480px);
+background-color:#333;
+}
+
+#cube > div:nth-child(4) {
+-webkit-transform: rotateY(180deg) translateZ(480px);
+background-color:#333;
+}
+
+#cube > div:nth-child(5) {
+-webkit-transform: rotateY(-90deg) translateZ(480px);
+background-color:#333;
+}
+
+#cube > div:nth-child(6) {
+-webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(60px);
+height: 960px;
+}
+
+#instructions {
+z-index:1;
+position:absolute;
+bottom:0px;
+}

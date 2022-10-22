@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head> 
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+<title>Gos Sa Mer</title>
+
+<!-- Mobile Specific Metas
+================================================== -->
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- Favicons
+================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<meta name="copyright" content="Lynden Sculpture Garden">
+
+<script>(function(d){d.className=d.className.replace(/^noJs\b/,'js');}(document.documentElement));</script>
+
+<link rel="stylesheet" type="text/css" href="css/html5.css" />
+
+<link rel="stylesheet" type="text/css" href="css/cube.css" /> <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+<div id="front">
+<header>
+<a href="#" class="activesection">GOS SA MER&nbsp;&nbsp;</a>
+<a href="introduction/index.html" class="section">INTRODUCTION</a>
+<a href="interview/index.html" class="section">INTERVIEW</a>
+<a href="checklist/index.html" class="section">CHECKLIST</a>
+<a href="artists/index.html" class="section">ABOUT THE ARTISTS</a>
+</header>
+</div>
+
+<div id="wrapper">
+
+<div id="viewport">
+
+<div id="cube">
+
+<div>&nbsp;</div>
+
+<div><img src="images/1.jpg" width="960"></div>
+
+<div><img src="images/2.jpg" width="960"></div>
+
+<div><img src="images/3.jpg" width="960"></div>
+
+<div><img src="images/4.jpg" width="960"></div>
+
+<div>&nbsp;</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="hidden"><img src="images/background.jpg" width="960" height="540"></div>
+
+<div id="instructions">
+<p class="credit">ROTATE WITH CURSOR/TOUCH OR ARROW KEYS. ESC KEY FOR DEFAULT POSITION.</p>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script>!window.jQuery && document.write('<script src="/js/jquery-1.4.2.min.js"><\/script>')</script><script>
+
+$(function(){
+
+$('a.showExp').live('click', function(evt) {
+
+evt.preventDefault();
+
+$('.fallback').fadeOut('slow', function() {
+
+$('.test').fadeIn('slow');
+
+});
+
+});
+
+});
+
+</script>
+
+<script src="js/experiment.js"></script>
+
+<script src="../tests/3dtransforms.js"></script>
+
+</body>
+
+</html>
